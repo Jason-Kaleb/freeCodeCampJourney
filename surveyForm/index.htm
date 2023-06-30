@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey Form</title>
+</head>
+<body>
+        <h1 id="title">Survey Form - FreeCodeCamp</h1>
+        <p id="description">It's a pleasure to have you visit our page. Please fill in the following Survey.</p>
+        <form id="survey-form" action="" method="post">
+                <label for="name" id="name-label">Name: <input type="text" id="name" name="name" placeholder="Enter your Name here" required></label>
+                <label for="email" id="email-label">Email: <input type="email" id="email" name="email" placeholder="Enter your Email here" required></label>
+                <label for="number" id="number-label">IQ (optional): <input type="number" id="number" name="iq" min="69" max="500" placeholder="Enter your IQ level here"></label>
+                <label for="dropdown"> What app do you use on a daily:
+                <select id="dropdown">
+                        <option value="">Select App</option>
+                        <option value="1">Facebook</option>
+                        <option value="2">Instagram</option>
+                        <option value="3">Whatsapp</option>
+                        <option value="4">Tiktok</option>
+                        <option value="5">Twitter</option>
+                        <option value="6">Other</option>
+                </select>
+                </label>
+                <label for="female"><input type="radio" name="gender" id="female"value="female"> Female</label>
+                <label for="male"><input type="radio" name="gender" id="male" value="male"> Male</label>
+                <label for=""> Favorite IQ genius (select as many as you like)
+                <label for="Adragon-De-Mello"><input type="checkbox" name="Adragon-De-Mello" id="Adragon-De-Mello" value="1"> Adragon De Mello</label>
+                <label for="Marnen-Laibow-Koser"><input type="checkbox" name="Marnen-Laibow-Koser" id="Marnen-Laibow-Koser" value="2"> Marnen Laibow-Koser</label>
+                <label for="Ainan-Cawley"><input type="checkbox" name="Ainan-Cawley" id="Ainan-Cawley" value="3"> Ainan Cawley</label>
+                <label for="Terence-Tao"><input type="checkbox" name="TerenceTao" id="Terence-Tao" value="4"> Terence Tao</label>
+                <label for="William-Shakespeare"><input type="checkbox" name="William-Shakespeare" id="William-Shakespeare" value="5"> William Shakespeare</label>
+                <label for="Albert-Einstein"><input type="checkbox" name="Albert-Einstein" id="Albert-Einstein" value="6"> Albert Einstein</label>
+                <label for="Edith-Stern"><input type="checkbox" name="Edith-Stern" id="Edith-Stern" value="7"> Edith Stern</label>
+                <label for="Michael-Grost"><input type="checkbox" name="Michael-Grost" id="Michael-Grost" value="8"> Michael Grost</label>
+                </label>
+                <label for="reason"> Provide a reason why you like these people: <textarea id="reason" rows="4" cols="40" name="reason"></textarea></label>
+                <input type="submit" name="submit" id="submit" value="submit">
+        </form>
+</body>
+</html>

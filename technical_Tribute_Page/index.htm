@@ -14,54 +14,102 @@
         <section class="main-section" id="introduction">
             <header>Intro</header>
                 <article>
+                    <h1>Introduction</h1>
+                        <p>
+                            C++ is a general-purpose, powerful, and versatile programming language widely used for developing various applications, including system software, game development, embedded systems, and scientific computing. It's known for its:
+                            <ul>
+                                <li>
+                                    Efficiency: C++ offers direct access to hardware resources, making it efficient for performance-critical tasks.
+                                </li>
+                               <li>
+                                    Object-oriented programming (OOP) support: It allows you to create reusable and modular code using objects and classes.
+                               </li>
+                               <li>
+                                    Procedural programming capabilities: It also supports traditional procedural programming for tasks where OOP might not be necessary.
+                               </li>
+                               <li>
+                                    Standard library: C++ provides a vast collection of pre-written functions and classes for common tasks, saving you development time.
+                               </li>
+                            </ul>
+                        </p>
                     <h1>Compilers</h1>
                         <p>
-                            A computer with a compiler toolchain that can develop applications to run on it and compile C++ code are prerequisites for following these tutorials.
-                            The C++ language has seen significant evolution over time, and these lessons cover many of the new capabilities that have been added. Therefore, a modern compiler is required to follow the tutorials successfully. It must support the features included by the 2011 standard, even if only in part.
-                            The new features are supported to varying degrees by numerous compiler manufacturers. Some compilers that are known to provide the required features are listed at the bottom of this page. There are a few that are free!
-                            You can access an outdated version of these courses here if, for some reason, you must use an older compiler.
+                            <ul>
+                                <li>
+                                    A computer with a compiler toolchain that can develop applications to run on it and compile C++ code are prerequisites for following these tutorials.
+                                </li>
+                                <li>
+                                    The C++ language has seen significant evolution over time, and these lessons cover many of the new capabilities that have been added. Therefore, a modern compiler is required to follow the tutorials successfully.
+                                </li>
+                                <li>
+                                    It must support the features included by the 2011 standard, even if only in part.
+                                    The new features are supported to varying degrees by numerous compiler manufacturers.
+                                </li>
+                                <li>
+                                    Some compilers that are known to provide the required features are listed at the bottom of this page. There are a few that are free!
+                                </li>
+                        
+                            </ul>
                         </p>
-                    <h2>What is a compiler?</h2>
+                    <h3>What is a compiler?</h3>
                         <p>
-                            A compiler is a software program that translates source code into executable code.
-                            It is used to compile the source code into machine code that can be executed by the computer.
-                            The compiler is also known as a compiler.
+                            <ul>
+                                <li>
+                                    A compiler is a software program that translates source code into executable code.
+                                    It is used to compile the source code into machine code that can be executed by the computer.
+                                    The compiler is also known as a compiler.
+                                </li>
+                            </ul>
                         </p>
                     <h3>Console programs</h3>
                         <p>
-                            A console program is a program that runs on the computer's command line.
-                            It is used to interact with the computer's user interface.
+                            <ul>
+                                <li>
+                                    A console program is a program that runs on the computer's command line.
+                                    It is used to interact with the computer's user interface.
+                                </li>
+                            </ul>
                         </p>
                 </article>
         </section>
         <section class="main-section" id="hello_world">
-            <header>C++ Hello World!</header>
+            <header><strong>C++ Hello World!</strong></header>
                 <article>
                     <p>
-                        Writing programs is the most effective approach to learn a programming language. The first program most beginners develop is usually called "Hello World," and it just prints "Hello World" to the screen of your computer. Despite being quite basic, it has every essential element that C++ programs have
-                        <span class="code"> 	
+                        <ul>
+                            <li>
+                                Writing programs is the most effective approach to learn a programming language. The first program most beginners develop is usually called "Hello World," and it just prints "Hello World" to the screen of your computer. Despite being quite basic, it has every essential element that C++ programs have.
+                            </li>
+                        </ul>
+                        <div class="code"> 	
                             // my first program in C++
                             #include <iostream>
                             int main()
                             {
                             std::cout << "Hello World!";
                             }
-                        </span>
+                        </div>
                     </p>
                 </article>
         </section>
         <section class="main-section" id="variables_and_types">
-            <header>Variables and Data types</header>
-            <article>
-                <h1>What is a <span>Variable<span>?</h1>
-                    <p>We can now define variable as a portion of memory to store a value. Below is an example of Variables and declaring variables.</p>
-                    <span class="code">
-                            #include <iostream>
+            <header><strong>Variables and Data types</strong></header>
+                <article>
+                    <h1>What is a <span>Variable<span>?</h1>
+                        <p>
+                            <ul>
+                                <li>
+                                    We can now define variable as a portion of memory to store a value. Below is an example of Variables and declaring variables.
+                                </li>
+                            </ul>
+                        </p>
+                        <div class="code">
+                                #include <iostream>
 
-                            int main() 
-                            {
-                              // Declare an integer variable named 'age' and initialize it with the value 25
-                              int age = 25;
+                                int main() 
+                                {
+                                // Declare an integer variable named 'age' and initialize it with the value 25
+                                int age = 25;
                             
                               // Declare a floating-point variable named 'pi' and initialize it with the value 3.14159
                               float pi = 3.14159;
@@ -76,54 +124,106 @@
                             
                               return 0;
                             }    
-                    </span>
+                        </div>
                         <h1>Data types</h1>
                             <p>
-                                Basic Data Types:
-                                1. int: Stores integers (whole numbers) like -2, 0, or 100.
-                                2. float: Stores single-precision floating-point numbers (decimals) like 3.14 or -5.25.
-                                3. double: Stores double-precision floating-point numbers with higher precision than float.
-                                4. char: Stores a single character like 'a', 'Z', or '#'.
-                                5. bool: Stores Boolean values representing true (true) or false (false).
+                                <h4>Basic Data Types:</h4>
+                                <ol>
+                                    <li>
+                                        int: Stores integers (whole numbers) like -2, 0, or 100.
+                                    </li>
+                                    <li>
+                                        float: Stores single-precision floating-point numbers (decimals) like 3.14 or -5.25.
+                                    </li>
+                                    <li>
+                                        double: Stores double-precision floating-point numbers with higher precision than float.
+                                    </li>
+                                    <li>
+                                        char: Stores a single character like 'a', 'Z', or '#'.
+                                    </li>
+                                    <li>
+                                        5. bool: Stores Boolean values representing true (true) or false (false).
+                                    </li>
+                                </ol>
                             </p>
             </article>
         </section>
         <section class="main-section" id="constants">
-            <header>Constants</header>
+            <header><strong>Constants</strong></header>
             <article>
                 <p>
-                    <span>Constants</span> are expressions with a fixed value.
+                    <h3>What is a constant?</h3>
+                    <ul>
+                        <li>
+                            <span>Constants</span> are expressions with a fixed value.
+                        </li>
+                    </ul>
                 </p>
             </article>
         </section>
         <section class="main-section" id="operators">
-            <header>Operators</header>
+            <header><strong>Operators</strong></header>
                 <article>
-                    <h1>What is an <span>Operator</span>?</h1>
-                        <p>In C++, operators are symbols that perform specific actions on one or more operands (values or variables)
-                        They allow you to:
-                            1. Perform calculations: +, -, *, / for arithmetic operations.
-                            2. Compare values: ==, !=, <, >, <=, >= for relational comparisons.
-                            3. Combine conditions: && (AND), || (OR), ! (NOT) for logical operations.
-                            4. Assign values: = for assignment, +=, -=, etc. for shorthand assignments.
-                            5. Manipulate data: Increment/decrement (++, --), bitwise operations (&, |, ^), etc.
-                            Operators are essential building blocks for writing expressions and controlling the flow of your C++ programs.
+                    <h3>What is an <span>Operator</span>?</h3>
+                        <p>
+                            <ul>
+                                <li>
+                                    In C++, operators are symbols that perform specific actions on one or more operands (values or variables). They allow you to:
+                                </li>
+                            </ul>
+                            <ol> 
+                                <li>
+                                    Perform calculations: +, -, *, / for arithmetic operations.
+                                </li>
+                                <li>
+                                    Compare values: ==, !=, <, >, <=, >= for relational comparisons.
+                                </li>
+                                <li>
+                                    Combine conditions: && (AND), || (OR), ! (NOT) for logical operations.
+                                </li>
+                                <li>
+                                    Assign values: = for assignment, +=, -=, etc. for shorthand assignments.
+                                </li>
+                                <li>
+                                    Manipulate data: Increment/decrement (++, --), bitwise operations (&, |, ^), etc.
+                                </li>
+                            </ol>
+                            <ul>
+                                <li>
+                                    Operators are essential building blocks for writing expressions and controlling the flow of your C++ programs.
+                                </li>
+                            </ul>
                         </p>
                 </article>
         </section>
         <section class="main-section" id="input_output">
-            <header>Basic I/O (Input/Output)</header>
+            <header><strong>Basic I/O (Input/Output)</strong></header>
             <article>
                 <h1>What is an <span>Input</span> and <span>Output</span>?</h1>
                     <p>
-                        C++ provides functionalities for interacting with the user and manipulating data through input and output operations. Here's a glimpse into two commonly used methods:
-                        1. Using cin and cout objects:
+                        <ul>
+                            <li>
+                                C++ provides functionalities for interacting with the user and manipulating data through input and output operations. Here's a glimpse into two commonly used methods:
+                            </li>
+                        </ul>
+                        <ol>
+                            <li>
+                                Using cin and cout objects:
 
-                        The iostream header file provides predefined objects for standard input (cin) and standard output (cout). These objects allow you to:
-                        Input: Use cin to read data entered by the user through the keyboard.
-                        Output: Use cout to print messages, variables, or expressions to the console.
-                        <h3>Example below: </h3>
-                            <span class="code">
+                                The iostream header file provides predefined objects for standard input (cin) and standard output (cout). <b>These objects allow you to:</b>  
+                            </li>
+                        </ol>
+                        <ul>
+                            <li>
+                                Input: Use cin to read data entered by the user through the keyboard.
+                            </li>
+                            <li>
+                                Output: Use cout to print messages, variables, or expressions to the console.
+                            </li>
+                        </ul>
+                        <!-- Stopped here-->
+                        <h4>Example below: </h4>
+                            <div class="code">
                                     #include <iostream>
 
                                     int main() {
@@ -142,7 +242,7 @@
                                     
                                     return 0;
                                     }
-                            </span>
+                            </div>
                     </p>
             </article>
         </section>
@@ -155,7 +255,7 @@
                             An <span>if</span> statement is used to test a condition and perform an action if the condition is true.
                             An <span>else</span> statement is used to perform an action if the condition is false.
                         </p>
-                        <h3>Example below: </h3>
+                        <h4>Example below: </h4>
                             <span class="code">
                                 if (condition) {
                                     // Code to be executed if the condition is true
@@ -172,7 +272,7 @@
                         <p>
                             <span>while loops</span> are used to execute a block of code repeatedly until a condition is met.
                         </p>
-                        <h3>Example below: </h3>
+                        <h4>Example below: </h4>
                             <span class="code">
                                 int i = 0;
                                 while (i < 10) {
@@ -192,7 +292,7 @@
                         A function is a reusable block of code that performs a single, related action.
                         A function can be called from another function.
                     </p>
-                    <h3>Example below: </h3>
+                    <h4>Example below: </h4>
                         <span class="code">
                             // Function declaration
                             int add(int a, int b);

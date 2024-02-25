@@ -77,31 +77,111 @@
                               return 0;
                             }    
                     </span>
-                    <h1>Data types</h1>
-                    <p>
-                        Basic Data Types:
-                        1. int: Stores integers (whole numbers) like -2, 0, or 100.
-                        2. float: Stores single-precision floating-point numbers (decimals) like 3.14 or -5.25.
-                        3. double: Stores double-precision floating-point numbers with higher precision than float.
-                        4. char: Stores a single character like 'a', 'Z', or '#'.
-                        5. bool: Stores Boolean values representing true (true) or false (false).
-                    </p>
+                        <h1>Data types</h1>
+                            <p>
+                                Basic Data Types:
+                                1. int: Stores integers (whole numbers) like -2, 0, or 100.
+                                2. float: Stores single-precision floating-point numbers (decimals) like 3.14 or -5.25.
+                                3. double: Stores double-precision floating-point numbers with higher precision than float.
+                                4. char: Stores a single character like 'a', 'Z', or '#'.
+                                5. bool: Stores Boolean values representing true (true) or false (false).
+                            </p>
             </article>
         </section>
         <section class="main-section" id="constants">
             <header>Constants</header>
+            <article>
+                <p>
+                    <span>Constants</span> are expressions with a fixed value.
+                </p>
+            </article>
         </section>
         <section class="main-section" id="operators">
             <header>Operators</header>
+                <article>
+                    <h1>What is an <span>Operator</span>?</h1>
+                        <p>In C++, operators are symbols that perform specific actions on one or more operands (values or variables)
+                        They allow you to:
+                            1. Perform calculations: +, -, *, / for arithmetic operations.
+                            2. Compare values: ==, !=, <, >, <=, >= for relational comparisons.
+                            3. Combine conditions: && (AND), || (OR), ! (NOT) for logical operations.
+                            4. Assign values: = for assignment, +=, -=, etc. for shorthand assignments.
+                            5. Manipulate data: Increment/decrement (++, --), bitwise operations (&, |, ^), etc.
+                            Operators are essential building blocks for writing expressions and controlling the flow of your C++ programs.
+                        </p>
+                </article>
         </section>
         <section class="main-section" id="input_output">
             <header>Basic I/O (Input/Output)</header>
+            <article>
+                <h1>What is an <span>Input</span> and <span>Output</span>?</h1>
+                    <p>
+                        C++ provides functionalities for interacting with the user and manipulating data through input and output operations. Here's a glimpse into two commonly used methods:
+                        1. Using cin and cout objects:
+
+                        The iostream header file provides predefined objects for standard input (cin) and standard output (cout). These objects allow you to:
+                        Input: Use cin to read data entered by the user through the keyboard.
+                        Output: Use cout to print messages, variables, or expressions to the console.
+                        <h3>Example below: </h3>
+                            <span class="code">
+                                    #include <iostream>
+
+                                    int main() {
+                                    int age;
+                                    std::string name;
+                                    
+                                    // Prompt the user for input
+                                    std::cout << "Enter your age: ";
+                                    std::cin >> age;
+                                    
+                                    std::cout << "Enter your name: ";
+                                    std::getline(std::cin, name); // Use getline for strings with spaces
+                                    
+                                    // Print the obtained information
+                                    std::cout << "Hello, " << name << "! You are " << age << " years old." << std::endl;
+                                    
+                                    return 0;
+                                    }
+                            </span>
+                    </p>
+            </article>
         </section>
         <section class="main-section" id="if_else">
             <header>if and else</header>
+                <article>
+                    <h1>What is an <span>if</span> and <span>else</span>?</h1>
+                        <p>
+                            <span>if-else statements</span> are fundamental control flow structures in C++ that allow you to execute different code blocks based on certain conditions.
+                            An <span>if</span> statement is used to test a condition and perform an action if the condition is true.
+                            An <span>else</span> statement is used to perform an action if the condition is false.
+                        </p>
+                        <h3>Example below: </h3>
+                            <span class="code">
+                                if (condition) {
+                                    // Code to be executed if the condition is true
+                                  } else {
+                                    // Code to be executed if the condition is false
+                                  }
+                            </span>
+                </article>
         </section>
         <section class="main-section" id="loops">
             <header>Loops (while loop)</header>
+                <article>
+                    <h1>What is a <span>while loop</span>?</h1>
+                        <p>
+                            <span>while loops</span> are used to execute a block of code repeatedly until a condition is met.
+                        </p>
+                        <h3>Example below: </h3>
+                            <span class="code">
+                                int i = 0;
+                                while (i < 10) {
+                                    std::cout << i << std::endl;
+                                    i++;
+                                }
+                                Output: 0 1 2 3 4 5 6 7 8 9
+                            </span>
+                </article>
         </section>
         <section class="main-section" id="functions">
             <header>Functions</header>

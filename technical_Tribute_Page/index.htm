@@ -8,19 +8,107 @@
 </head>
 <body>
     <main id="main-doc">
-        <section class="main-section" id="">
+        <section class="main-section" id="documentation">
             <header>C++ Documentation</header>
         </section>
-        <section class="main-section" id="introduction">Intro</section>
-        <section class="main-section" id="hello_world">C++ Hello World!</section>
-        <section class="main-section" id="variables_and_types">Variables and types</section>
-        <section class="main-section" id="constants">Constants</section>
-        <section class="main-section" id="operators">Operators</section>
-        <section class="main-section" id="input_output">Basic I/O (Input/Output)</section>
-        <section class="main-section" id="if_else">if and else</section>
-        <section class="main-section" id="loops">Loops (while loop)</section>
-        <section class="main-section" id="functions">Functions</section>
-        <section class="main-section" id="reference">Reference</section>
+        <section class="main-section" id="introduction">
+            <header>Intro</header>
+                <article>
+                    <h1>Compilers</h1>
+                        <p>
+                            A computer with a compiler toolchain that can develop applications to run on it and compile C++ code are prerequisites for following these tutorials.
+                            The C++ language has seen significant evolution over time, and these lessons cover many of the new capabilities that have been added. Therefore, a modern compiler is required to follow the tutorials successfully. It must support the features included by the 2011 standard, even if only in part.
+                            The new features are supported to varying degrees by numerous compiler manufacturers. Some compilers that are known to provide the required features are listed at the bottom of this page. There are a few that are free!
+                            You can access an outdated version of these courses here if, for some reason, you must use an older compiler.
+                        </p>
+                    <h2>What is a compiler?</h2>
+                        <p>
+                            A compiler is a software program that translates source code into executable code.
+                            It is used to compile the source code into machine code that can be executed by the computer.
+                            The compiler is also known as a compiler.
+                        </p>
+                    <h3>Console programs</h3>
+                        <p>
+                            A console program is a program that runs on the computer's command line.
+                            It is used to interact with the computer's user interface.
+                        </p>
+                </article>
+        </section>
+        <section class="main-section" id="hello_world">
+            <header>C++ Hello World!</header>
+                <article>
+                    <p>
+                        Writing programs is the most effective approach to learn a programming language. The first program most beginners develop is usually called "Hello World," and it just prints "Hello World" to the screen of your computer. Despite being quite basic, it has every essential element that C++ programs have
+                        <span class="code"> 	
+                            // my first program in C++
+                            #include <iostream>
+                            int main()
+                            {
+                            std::cout << "Hello World!";
+                            }
+                        </span>
+                    </p>
+                </article>
+        </section>
+        <section class="main-section" id="variables_and_types">
+            <header>Variables and Data types</header>
+            <article>
+                <h1>What is a <span>Variable<span>?</h1>
+                    <p>We can now define variable as a portion of memory to store a value. Below is an example of Variables and declaring variables.</p>
+                    <span class="code">
+                            #include <iostream>
+
+                            int main() 
+                            {
+                              // Declare an integer variable named 'age' and initialize it with the value 25
+                              int age = 25;
+                            
+                              // Declare a floating-point variable named 'pi' and initialize it with the value 3.14159
+                              float pi = 3.14159;
+                            
+                              // Declare a character variable named 'initial' and initialize it with the letter 'A'
+                              char initial = 'A';
+                            
+                              // Print the values of the variables
+                              std::cout << "Age: " << age << std::endl;
+                              std::cout << "Pi: " << pi << std::endl;
+                              std::cout << "Initial: " << initial << std::endl;
+                            
+                              return 0;
+                            }    
+                    </span>
+                    <h1>Data types</h1>
+                    <p>
+                        Basic Data Types:
+                        1. int: Stores integers (whole numbers) like -2, 0, or 100.
+                        2. float: Stores single-precision floating-point numbers (decimals) like 3.14 or -5.25.
+                        3. double: Stores double-precision floating-point numbers with higher precision than float.
+                        4. char: Stores a single character like 'a', 'Z', or '#'.
+                        5. bool: Stores Boolean values representing true (true) or false (false).
+                    </p>
+            </article>
+        </section>
+        <section class="main-section" id="constants">
+            <header>Constants</header>
+        </section>
+        <section class="main-section" id="operators">
+            <header>Operators</header>
+        </section>
+        <section class="main-section" id="input_output">
+            <header>Basic I/O (Input/Output)</header>
+        </section>
+        <section class="main-section" id="if_else">
+            <header>if and else</header>
+        </section>
+        <section class="main-section" id="loops">
+            <header>Loops (while loop)</header>
+        </section>
+        <section class="main-section" id="functions">
+            <header>Functions</header>
+        </section>
+        <section class="main-section" id="reference">
+            <header>Reference</header>
+        </section>
     </main>
 </body>
 </html>

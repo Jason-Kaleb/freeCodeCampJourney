@@ -56,6 +56,16 @@ header {
     font-size: 18px;
 }
 
+.nav-link:link, .nav-link:active {
+    color: #000;
+    display: block;
+    text-decoration: none;
+    background-color: #FAF3DD;
+    padding: 15px 35px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
 #main-doc {
     position: absolute;
     left: 350px;

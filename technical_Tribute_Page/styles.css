@@ -1,6 +1,7 @@
 html, body {
     box-sizing: border-box;
-    background-color: #fff;
+    background-color: #FAF3DD;
+    color:  #3D2C8D;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -9,17 +10,23 @@ header {
     font-weight: bold;
 }
 
-#navbar header {
-    font-size: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-}
 #navbar {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 300px;
     height: 100%;
-    background-color: pink;
+    background-color: #FAF3DD;
+    border-right: 3px solid #e98074;
+}
+
+#navbar header {
+    position: relative;
+    top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 3px;
 }
 
 #navbar ul {
@@ -30,19 +37,16 @@ header {
 }
 
 #navbar li {
-    position: relative;
-    left: 0;
     background-color: #fff;
     list-style: none;
-    border: 2px solid #000;
+    border-top: 1px solid #e98074;
 }
 
 #navbar a {
     display: block;
     text-decoration: none;
-    color: #000;
-    background-color: aqua;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 26px;
+    background-color: #FAF3DD;
+    padding: 15px 35px;
+    cursor: pointer;
+    font-size: 18px;
 }

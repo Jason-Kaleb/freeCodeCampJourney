@@ -4,11 +4,14 @@ html, body {
     font-size: 18px;
     color:  #3D2C8D;
     font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     font-size: 30px;
-    font-weight: bold;
+    font-weight: bolder;
+    text-decoration: underline;
 }
 
 #navbar {
@@ -23,6 +26,7 @@ header {
 
 #navbar header {
     position: relative;
+    text-decoration: unset;
     top: 10px;
     font-size: 30px;
     font-weight: bold;
@@ -43,7 +47,7 @@ header {
     border-top: 1px solid #e98074;
 }
 
-#navbar a {
+.nav-link {
     display: block;
     text-decoration: none;
     background-color: #FAF3DD;
@@ -57,7 +61,6 @@ header {
     left: 350px;
     padding: 25px;
     margin-bottom: 100px;
-    overflow: auto;
 }
 
 .code_block {
@@ -68,9 +71,87 @@ header {
     border-radius: 5px;
     padding: 10px;
     margin: 20px;
-  }
+}
 
-  span {
+span {
     font-style: italic;
     font-weight: bold;
-  }
+}
+
+.main-section ul li {
+    list-style: none;
+    background-color: #E1DAC6;
+    font-weight: 600;
+}
+
+.main-section ol li {
+    list-style: none;
+    background-color: #E1DAC6;
+}
+
+p {
+    font-size: 22px;
+    font-style: oblique;
+}
+
+button {
+    margin-left: 450px;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    background-color:#E1DAC6;
+    border: 1px solid #E1DAC6;
+    padding: 15px 35px;
+    cursor: pointer;
+}
+
+button a {
+    text-decoration: none;
+    color: #3D2C8D;
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        width: 150px;
+    }
+    
+    #navbar a {
+        padding: 0;
+    }
+
+    #main-doc {
+       left: 130px;
+    }
+
+    button  {
+        margin-left: 70px;
+    }
+
+    progress {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.progress {
+    position: fixed;
+    appearance: none;
+    width: 80%;
+    top: 0;
+    left: 302px;
+    height: 5px;
+    background-color: #E1DAC6;
+}
+
+.progress::-webkit-progress-bar {
+    background-color: #E1DAC6;
+}
+
+.progress::-webkit-progress-value {
+    background-color: #3D2C8D;
+}
+
+.progress::-moz-progress-bar {
+    background-color:#3D2C8D;
+}

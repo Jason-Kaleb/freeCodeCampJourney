@@ -1,6 +1,7 @@
 html, body {
     box-sizing: border-box;
     background-color: #FAF3DD;
+    font-size: 18px;
     color:  #3D2C8D;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -50,3 +51,26 @@ header {
     cursor: pointer;
     font-size: 18px;
 }
+
+#main-doc {
+    position: absolute;
+    left: 350px;
+    padding: 25px;
+    margin-bottom: 100px;
+    overflow: auto;
+}
+
+.code_block {
+    background-color: #30312e;
+    color: #fff;
+    display: inline-block;
+    line-height: 1.5;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+  }
+
+  span {
+    font-style: italic;
+    font-weight: bold;
+  }

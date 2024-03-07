@@ -13,24 +13,25 @@
         <nav id="nav-bar">
             <ul>
                 <li>
-                    <a href="#">About</a>
+                    <a href="#form-wrapper" class="nav-link">Join</a>
                 </li>
                 <li>
-                    <a href="#">Services</a>
+                    <a href="#features" class="nav-link">Features</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#pricing" class="nav-link">Prices</a>
                 </li>
             </ul>
         </nav>
     </header>
         <section id="form-wrapper">
-                <form id="form">
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
                     <h1 class="heading">Unlocking your potential, one lesson at a time</h1>
-                    <input type="email" id="email" placeholder="Enter your email address">
-                    <input type="submit" id="submit" value="JOIN NOW" formaction="https://www.freecodecamp.com/email-submit">
+                    <input type="email" id="email" name="email" placeholder="Enter your email address">
+                    <input type="submit" id="submit" value="JOIN NOW">
                 </form>
         </section>
+        <section id="features">
                 <div class="container-feature">
                     <div class="feature-item">
                         <img src="logo.svg" alt="small png" class="feature-image">
@@ -66,6 +67,7 @@
                             </div>
                     </div>
                 </div>
+            </section>
             <div class="container">
                 <iframe 
                         id="video"
@@ -78,6 +80,7 @@
                         allowfullscreen="">
                 </iframe>
             </div>
+            <section id="pricing">
             <div class="card-container">
                 <div class="card">
                     <div class="programs">
@@ -119,8 +122,9 @@
                     <button type="button" class="btn">Select</button>   
                 </div>
             </div>
+        </section>
     </main>
-        <footer>
+        <footer class="footer">
             <ul>
                 <li>
                     <a href="#">Privacy</a>

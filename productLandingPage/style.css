@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid #000;
+    
 }
 
 html {
@@ -16,22 +16,8 @@ nav {
     margin-right: -170px;
 }
 
-nav > ul  {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    letter-spacing: 1.6px;
-}
-
 li {
     list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-    font-size: 2.5rem;
 }
 
 input {
@@ -73,10 +59,27 @@ input[type="submit"], button {
     font-size: 1.6rem;
 }
 
+span {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: lighter;
+    padding-right:10px;
+    
+}
 
 #wrapper {
     position: relative;
     padding-top: 90px;
+}
+
+#nav-bar > ul  {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    letter-spacing: 1.6px;
+    font-size: 2.5rem;
 }
 
 #header {
@@ -115,6 +118,12 @@ input[type="submit"], button {
     width: 190vw;
     padding: 0 0 1em 0;
     height:148px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
 }
 
 .container-feature {
@@ -198,5 +207,84 @@ input[type="submit"], button {
     font-size: 1.6rem;
     text-align: center;
 }
- 
-/*DO the footer next*/
+
+.footer {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: column;
+    border: none;
+    background-color: blue;
+} 
+
+.footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    letter-spacing: 1.6px;
+    font-size: 1.6rem;
+    padding: 10px;
+}
+
+.footer ul li {
+    list-style: none;
+    padding-left: 20px;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    nav {
+        flex: none;
+        width: 100%;
+        margin-right: 0;
+}
+
+    #nav-bar > ul {
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.8rem;
+}
+
+    #header {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        height: auto;
+}
+
+    #header-img, #nav-bar {
+        width: 100%;
+        margin: 0 auto;
+}
+
+    #form-wrapper {
+        padding: 20px;
+        font-size: 1.6rem;
+    }
+
+    .container-feature, .card-container {
+        flex-direction: column;
+        align-items: center;
+}
+
+    .feature-item {
+        width: 100%;
+}
+
+    .card {
+        width: 45%;
+        margin: 10px auto;
+}
+
+    .footer ul {
+        justify-content: center;
+    }
+}

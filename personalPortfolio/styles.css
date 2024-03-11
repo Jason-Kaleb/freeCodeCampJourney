@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    border: 1px solid black;
+}
+
+#header {
+    border: 2px solid blue;
+}
+
+#welcome-section {
+    border: 2px solid orangered
+}
+

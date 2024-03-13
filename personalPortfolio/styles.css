@@ -1,8 +1,10 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box  ;
     border: 1px solid black;
+}
+
+body {
+    margin: 0;
 }
 
 #header {
@@ -54,3 +56,24 @@
     z-index: 1;
 }
 
+#projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 16px;
+    padding: 20px 20px;
+}
+
+.project-tile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    border-radius: 10px;
+}

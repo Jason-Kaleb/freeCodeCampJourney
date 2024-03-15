@@ -57,30 +57,52 @@ body {
 }
 
 #projects {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+
+.project {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    max-width: 1400px;
+    max-width: 1100px;
     margin: 0 auto;
     gap: 16px;
-    padding: 20px 20px;
+    padding: 30px 0px;
+    border: 2px solid red;
+}
+
+.project-heading {
+    text-align: center; 
+    margin-bottom: 1rem;
+    font-size: 2em; 
+    color: #333; 
+    display: block; 
+    flex-grow: 0;
 }
 
 .project-tile > p {
-
-    
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 20px 20px;
 }
 
 img {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
     max-width: 350px;
     height: 300px;
-    border-radius: 10px;
+    margin: 0 auto;
+    padding: 0;
     object-fit: cover;
     border: 2px solid violet;
 }
+
+/*Align the contact section*/

@@ -7,4 +7,18 @@ const output = document.getElementById('output');
 let isError =  false;
 
 function cleanInputString(str)
-{}
+{
+    const regex = /[+-\s]/g;  // [] --> called a character class in regular expressions
+    return str.replace(regex, "");
+}
+
+function isInvalidInput(str)
+{
+    const regex = /\d+e\d+/i;
+    return str.match(regex);
+}
+
+function addEntry()
+{
+    const targetId = "#" + entryDropdown.value;
+}
